@@ -192,3 +192,9 @@ h2 {
     margin-top: 10px;
     color: #f05f40;
 }
+
+/* Monthly favorites */
+
+.monthly-favorites .table{
+    text-align: center;
+}

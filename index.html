@@ -14,7 +14,7 @@
     <div class="container-fluid navalert-container">
         <!--alert-->
         <article class="container-fluid alert-container">
-            <div class="row d-none d-sm-block">
+            <div class="row d-none d-md-block">
                 <div class="col-12">
                     <div class="alert alert-warning site-wide-alert">
                     <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="/">See here for details</a>
@@ -44,10 +44,12 @@
                             <a class="dropdown-item" href="#">American</a>
                         </div>
                     </li>
-                    <li class="nav-item mr-2 d-block d-md-none"><a href="#" class="nav-link" data-toggle="modal" data-target="#signUpModal">Sign in / Sign Up</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item mr-2 d-block d-lg-none"><a href="#" class="nav-link" data-toggle="modal" data-target="#signUpModal">Sign in / Sign Up</a></li>
                 </ul>
             </div>
-            <div class="d-none d-md-block">
+            <div class="d-none d-lg-block">
                 <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p> 
                 <a class="btn btn--cta btn--red" href="#" data-toggle="modal" data-target="#signUpModal">Sign In / Sign Up</a>
             </div>   
@@ -65,7 +67,7 @@
                 <p class="lead">
                     Sign up today to start receiving the world's best whiskeys each month.
                     <s class="d-none d-sm-block">$19.99</s>
-                    <span class="d-block d-sm-none"><br></span>
+                    <span class="d-block"><br></span>
                     <strong><mark>First drink on us!</mark></strong>
                 </p>
                 <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign up!</button>        
@@ -158,41 +160,48 @@
     <!--/.features-->
         
     <!--monthly-favorites-->
-    <article class="container monthly-favorites-container">
-        <section class="monthly-favorites">
-            <h2 class="text-uppercase">Monthly favorites:</h2>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Origin</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Whisky_1</td> 
-                        <td>Origin_1</td>
-                    </tr>
-                    <tr>
-                        <td>Whisky_2</td> 
-                        <td>Origin_2</td>
-                    </tr>
-                    <tr>
-                        <td>Whisky_3</td> 
-                        <td>Origin_3</td>
-                    </tr>
-                    <tr>
-                        <td>Whisky_4</td> 
-                        <td>Origin_4</td>
-                    </tr>
-                    <tr>
-                        <td>Whisky_5</td> 
-                        <td>Origin_5</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </article>
+    <div class="container-wrapper">
+        <article class="container monthly-favorites-container content-container">
+            <section class="monthly-favorites">
+                <div class="row">
+                    <div class="col-12 page-header">
+                        <h2 class="text-uppercase">Monthly favorites:</h2>
+                        <hr class="block-divider block-divider--short block-divider--orange">
+                    </div>
+                </div>
+                <table class="table table-dark table-striped table-hover">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Origin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Whisky_1</td> 
+                            <td>Origin_1</td>
+                        </tr>
+                        <tr>
+                            <td>Whisky_2</td> 
+                            <td>Origin_2</td>
+                        </tr>
+                        <tr>
+                            <td>Whisky_3</td> 
+                            <td>Origin_3</td>
+                        </tr>
+                        <tr>
+                            <td>Whisky_4</td> 
+                            <td>Origin_4</td>
+                        </tr>
+                        <tr>
+                            <td>Whisky_5</td> 
+                            <td>Origin_5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+    </div>
     <!--/.monthly-favorites-->
     
     <!--modal-->
